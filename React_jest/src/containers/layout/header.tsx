@@ -1,14 +1,15 @@
 /*
  * @Author: lyricsfan 
  * @Date: 2019-03-06 20:03:23 
- * @Last Modified by:   lyricsfan 
- * @Last Modified time: 2019-03-06 20:03:23 
+ * @Last Modified by: lyricsfan
+ * @Last Modified time: 2019-03-06 21:27:04
  */
 import React, { Component } from 'react';
 import {
   Layout, Menu, Breadcrumb, Icon,
 } from 'antd';
 import './index.css'
+import  Language from './language'
 const { SubMenu } = Menu;
 const { Header } = Layout;
 
@@ -26,6 +27,7 @@ export default class Headers extends Component{
               <Menu.Item key="1">nav 1</Menu.Item>
               <Menu.Item key="2">nav 2</Menu.Item>
               <Menu.Item key="3">nav 3</Menu.Item>
+              <Language/>
             </Menu>
           </Header>
          

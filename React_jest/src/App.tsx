@@ -2,7 +2,7 @@
  * @Author: lyricsfan 
  * @Date: 2019-03-06 20:03:27 
  * @Last Modified by: lyricsfan
- * @Last Modified time: 2019-03-06 20:34:30
+ * @Last Modified time: 2019-03-06 21:17:44
  */
 import intl from "react-intl-universal";
 import _ from 'lodash'
@@ -63,7 +63,7 @@ class App extends Component {
       currentLocale = "zh-CN"
     }
     http
-      .get(`local/${currentLocale}.json`)
+      .get(`/local/${currentLocale}.json`)
       .then(res => {
         return intl.init({
           currentLocale,
@@ -76,7 +76,7 @@ class App extends Component {
         this.setState({ initDone: true })
     })
     // console.log(currentLocale,!_.find(SUPPOER_LOCALES,{value:currentLocale}))
-    
+  
   }
 }
 

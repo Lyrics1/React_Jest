@@ -9,12 +9,13 @@ import React, { Component } from 'react';
 import {
   Layout, Menu, Icon,
 } from 'antd';
+import intl from 'react-intl-universal';
 import './index.css'
 const { SubMenu } = Menu;
 const {  Sider } = Layout;
 
 export default class Sliders extends Component{
-    render() {
+  render() {
         return (
             <Sider width={200} style={{ background: '#fff' }}>
               <Menu
@@ -23,7 +24,7 @@ export default class Sliders extends Component{
                 defaultOpenKeys={['sub1']}
                 style={{ height: '100%', borderRight: 0 }}
               >
-                <SubMenu key="sub1" title={<span><Icon type="user" />subnav 1</span>}>
+              <SubMenu key="sub1" title={<span><Icon type="user" />{intl.get('MY_CLASS')}</span>}>
                   <Menu.Item key="1">option1</Menu.Item>
                   <Menu.Item key="2">option2</Menu.Item>
                   <Menu.Item key="3">option3</Menu.Item>

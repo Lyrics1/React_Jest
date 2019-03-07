@@ -6,5 +6,4 @@
  */
 import { combineReducers } from 'redux'
 import { login } from './redux/login.redux'
-import {language} from './redux/changeLanguage'
-export default combineReducers({ login,language });
+export default combineReducers({ login,});

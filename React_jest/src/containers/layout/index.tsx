@@ -1,8 +1,8 @@
 /*
  * @Author: lyricsfan 
  * @Date: 2019-03-06 20:03:35 
- * @Last Modified by:   lyricsfan 
- * @Last Modified time: 2019-03-06 20:03:35 
+ * @Last Modified by: lyricsfan
+ * @Last Modified time: 2019-03-07 19:53:54
  */
 import React, { Component } from 'react';
 import {
@@ -11,8 +11,8 @@ import {
 import './index.css'
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
-import Headers from './header'
-import Sliders from './slider'
+import Headers from './Header'
+import Sliders from './Slider'
 
 export default class Index extends Component{
     render() {

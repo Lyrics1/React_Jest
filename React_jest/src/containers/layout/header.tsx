@@ -2,20 +2,23 @@
  * @Author: lyricsfan 
  * @Date: 2019-03-06 20:03:23 
  * @Last Modified by: lyricsfan
- * @Last Modified time: 2019-03-06 21:27:04
+ * @Last Modified time: 2019-03-07 21:13:15
  */
 import React, { Component } from 'react';
+import intl from 'react-intl-universal';
 import {
-  Layout, Menu, Breadcrumb, Icon,
+  Layout, Menu, 
 } from 'antd';
-import './index.css'
-import  Language from './language'
-const { SubMenu } = Menu;
+
+import {ViewLoginRegiests} from '../../component/index'
 const { Header } = Layout;
 
 export default class Headers extends Component{
+  componentDidMount() {
+
+  }
     render() {
-        return (
+      return (
           <Header className="header">
             <div className="logo" />
             <Menu
@@ -24,10 +27,7 @@ export default class Headers extends Component{
               defaultSelectedKeys={['2']}
               style={{ lineHeight: '64px' }}
             >
-              <Menu.Item key="1">nav 1</Menu.Item>
-              <Menu.Item key="2">nav 2</Menu.Item>
-              <Menu.Item key="3">nav 3</Menu.Item>
-              <Language/>
+               <ViewLoginRegiests/>
             </Menu>
           </Header>
          

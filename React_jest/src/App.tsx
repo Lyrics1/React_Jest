@@ -52,7 +52,6 @@ class App extends Component<{}, {
       http
         .get(`/local/${currentLocale}.json`)
         .then(res => {
-          console.log(res.data)
           return intl.init({
             currentLocale,
             locales: {

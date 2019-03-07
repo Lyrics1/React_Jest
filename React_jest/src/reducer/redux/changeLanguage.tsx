@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 const Chinese = 'Chinese'
 const English = 'English'
    
-export default function changeLanguage(state = Chinese, action: any) {
+export  function language(state = Chinese, action: any) {
     switch (action.type) {
         case 'CHINESE':
             return Chinese; break;

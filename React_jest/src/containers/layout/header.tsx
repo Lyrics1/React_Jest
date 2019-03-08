@@ -19,10 +19,9 @@ export default class Headers extends Component{
   }
     render() {
       return (
-          <Header className="header">
+          <Header style={{ background: '#fff', paddingLeft: 25 }} className="header">
             <div className="logo" />
             <Menu
-              theme="dark"
               mode="horizontal"
               defaultSelectedKeys={['2']}
               style={{ lineHeight: '64px' }}

@@ -12,7 +12,7 @@ import './index.css'
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 import Headers from './Header'
-import Sliders from './Slider'
+import Sliders from './Sider'
 
 export default class Index extends Component{
     render() {
@@ -29,7 +29,7 @@ export default class Index extends Component{
                 <Breadcrumb.Item>App</Breadcrumb.Item>
               </Breadcrumb> */}
               <Content style={{
-                background: '#fff', padding: 24, margin: 0, minHeight: 80+'vh',
+                background: '#fff', padding: 24, margin: 0, minHeight: 85+'vh',
               }}
               >
                 Content

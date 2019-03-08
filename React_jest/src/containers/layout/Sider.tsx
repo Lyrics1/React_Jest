@@ -18,7 +18,8 @@ export default class Sliders extends Component{
   render() {
         return (
             <Sider    breakpoint="md" collapsedWidth="0">
-              <Menu
+            <Menu
+                theme="dark"
                 mode="inline"
                 // defaultSelectedKeys={['1']}
                 defaultOpenKeys={['sub1']}
